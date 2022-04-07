@@ -11,3 +11,11 @@ ios UIButton 提供的按钮按下反馈api，没包含背景色反馈。。。�
 
 1. 支持 按下反馈 - 透明度*0.5 变浅
 2. 支持设置selected状态的背景色
+
+
+## Usage
+```
+#import "YMBaseButton.h"
+
+button.selectedBgColor = [UIColor redColor];
+```
