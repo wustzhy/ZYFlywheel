@@ -1,13 +1,18 @@
 ## WHAT about me
 
-SuperSimpleCollectionView, is a super simple way of using collectionView.
+`SuperSimpleCollectionView` is a super simple way of using collectionView.
 
-When we programme to implement a requirement through CollectionView, we no need to create XXCollectionView class file. Just Simply need to create XXCollectionViewCell class file, and call the initilize method of `ZYBaseCollectionView`.
+When we programme to implement a requirement through CollectionView, `SuperSimpleCollectionView` help us that we no longer need to create XXCollectionView class file. Just Simply need to create XXCollectionViewCell class file, and call the initilize method of `ZYBaseCollectionView`.
+
+> `SuperSimpleCollectionView`, 是一种超级简单使用`collectionView`的方式
+> 当通过`collectionView`去实现某种列表需求时，`SuperSimpleCollectionView`帮助我们，不再需要创建各种命名的`XXCollectionView`类文件，仅需创建`XXCollectionViewCell`类文件，然后调用`ZYBaseCollectionView`的初始化方法即可。
 
 
 ## WHY I'm created
 
-For coding less about CollectionView. For example, decrease all kinds of XXCollectionView files, save code of `UICollectionViewDelegate, UICollectionViewDataSource`'s methods.
+I'm created For coding least about CollectionView. For example, decrease all kinds of XXCollectionView files, save code of `UICollectionViewDelegate, UICollectionViewDataSource`'s methods.
+
+> `SuperSimpleCollectionView`的存在，是为了在`CollectionView`上敲最少的代码。例如，减少了各种命名为`XXCollectionView`类的文件，节省了`UICollectionViewDelegate, UICollectionViewDataSource`代理方法的实现。
 
 
 ## Usage
@@ -43,7 +48,7 @@ For coding less about CollectionView. For example, decrease all kinds of XXColle
 
 ### CollectionView of scrollDirection Vertical with itemSpace accuracy
 
-初始化 滚动方向为垂直方向的CollectionView，itemSpace设定值 ≤ 实际展示值
+初始化 滚动方向为垂直方向的CollectionView，itemSpace设定值 = 实际展示值
 ```
 [self.view addSubview:({
   ZYBaseCollectionView *collectionView =
@@ -68,8 +73,8 @@ For coding less about CollectionView. For example, decrease all kinds of XXColle
 })];
 ```
 
-### features
-#### 通过数据决定cell的默认选中状态
+### Features
+#### 通过数据(Model)决定cell的默认选中状态
 ```
 //模拟请求
 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
