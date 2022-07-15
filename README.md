@@ -1,5 +1,5 @@
 # ZYFlywheel
-Tools created in `ZYFlywheel` Project, are in order to write less code && work faster, as a result, we get more and more relaxed.
+Tools created in `ZYFlywheel` Project, are in order to help us write less code && work faster, as a result, we get more and more relaxed.
 
 Just like the slogan Flywheel power coding.
 
